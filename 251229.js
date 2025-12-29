@@ -1,0 +1,497 @@
+첫번째문서.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문서의 제목</title>
+</head>
+<body>
+
+<!--
+	이 영역은 주석 영역이라 합니다.
+	주석 처리 부분은 문서에 대한 설명글을 주로 기술합니다.
+	그록, 이 주석 영역은 실행에서 제외됩니다.  
+-->
+
+<!--
+	HTML 요소(Element)
+형식1) <시작태그명 속성명 ="속성값" ...>컨텐츠(내용) </종료태그명>
+	==> 시작태그명과 종료태그명은 같다.
+	==> 컨텐츠 자리에는 '문자열', '자식요소'가 올 수 있다.
+	==> 속성은 요소의 성질, 특징을 정의하는 것으로 요소의 추가적인 정보를 제공한다.
+
+형식2) <시작태그명 속성명="속성값" ...>
+	==> 컨텐츠가 없으면 종료태그도 없고 속성만 설정할 수 있다.
+	==> 예) <meta>, <br>, <hr>, <img>, <link>, <input> 등
+ -->
+ 
+안녕하세요. 웹표준 UI구현 시간입니다.
+
+새롭게 추가된 내용입니다.
+
+</body>
+</html>
+
+/*======================================================================*/
+
+텍스트표시.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트 표시</title>
+</head>
+<body>
+
+<!-- 
+	HTML에서는 1개 이상의 연속된 공백(space)을 삽입하여도 1개의 공백으로 표시된다.
+	1개 이상의 연속된 줄바꿈(enter)도 1개의 공백으로 표시된다.
+	
+	<br>태그 ==> 강제 줄바꿈을 한다. <br>태그 하나가 줄바꿈 한 번을 의미한다.
+ -->
+
+안녕하세요<br><br><br><br>
+텍스트는 body태그 안에 특별한 태그 없이
+입력할 수 있지만 <br> 단락을 표시하지 않으면
+전체가 연결되어 한 줄로 표시됩니다.
+
+</body>
+</html>
+
+/*======================================================================*/
+
+p태그연습.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>p태그</title>
+
+<!-- 
+	<p>태그는 단락(문단)을 나타내는 태그로 줄바꿈 기능이 있다.
+ -->
+</head>
+<body>
+안녕<br>하세요
+<P>이 내용은 P태그 영역의 내용입니다.</P>
+<p>p태그가 연속되면 줄바꿈이 겹쳐서 나타납니다.</p>
+반갑습니다.
+
+</body>
+</html>
+
+/*======================================================================*/
+
+Header태그들.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Header 태그들</title>
+</head>
+<body>
+
+<!-- 
+	Header 태그들은 태그명이 '<h숫자>' 형태로 되어 있으면 숫자는 1 ~ 6 사이의 값을 갖는다.
+	숫자가 작으면 글자의 크기가 크게 나타난다.
+	
+	header 태그들도 <p>태그와 같이 줄바꿈 기능이 있다.
+	header 태그들은 주로 본문의 제목을 나타낼 때 사용한다.
+-->
+
+보통문자
+<h1>Header 영역 01</h1>
+<h2>Header 영역 02</h2>
+<h3>Header 영역 03</h3>
+<h4>Header 영역 04</h4>
+<h5>Header 영역 05</h5>
+<h6>Header 영역 06</h6>
+<h7>Header 영역 07</h7>
+
+</body>
+</html>
+
+/*======================================================================*/
+
+pre태그.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	<pre>태그 ==> 줄바꿈이나 사이띄기를 원본과 같게 나타낸다.
+			 ==> 줄바꿈 기능이 있다.
+-->
+
+<h2>보통의 문장</h2>
+HTML문서에서는 보통					사이띄기나 줄바꿈은
+HTML에서 제공하는 태그나 명령을 이용해서만
+가능하다.
+
+<hr color="red">
+
+<h2>pre 태그 영역의 문장</h2>
+<pre>
+HTML문서에서는 보통					사이띄기나 줄바꿈은
+HTML에서 제공하는 태그나 명령을 이용해서만
+가능하다.
+</pre>
+pre 영역 다음 문자.
+
+
+
+</body>
+</html>
+
+/*======================================================================*/
+
+텍스트서식.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트 서식</title>
+<!-- 
+	텍스트 서식 관련 태그들
+		==> 문자에 간단한 효과를 주는 태그들을 말한다.
+ -->
+</head>
+
+<body>
+
+보통글자<br>
+<b>두꺼운 글자체(b태그)</b><br>
+<strong>두꺼운 글자체(strong태그)</strong><br><br> <!-- 중요한 텍스트에 사용(중요성, 긴급함 강조) -->
+
+<i>기울림꼴 글자(i태그)</i><br>
+<em>기울림꼴 글자(em태그)</em><br><br><!-- 문맥상 강조할 텍스트 -->
+
+<u>밑줄 문자(u태그)</u><br>
+<ins>밑줄 문자(ins))</ins><br><br> <!-- 새로 추가된 텍스트 표시 -->
+
+<s>취소선(s태그)</s><br>
+<strike>취소선(strike태그)</strike><br>
+<del>취소선(del태그)</del><br><br> <!-- 삭제된 텍스트 표시 -->
+
+<mark>하이라이트</mark><br><br>
+
+다음은 화면에 문자열을 출력하는 자바 코드입니다.<br>
+<code>
+	System.out.println("안녕하세요");
+</code><br><br>
+
+보통글자<sup>위첨자(sup태그)</sup><br><br>
+보통글자<sub>아래첨자(sub태그)</sub><br><br>
+
+<!-- 
+	<hr>태그 ==> 수평선을 그려주는 태그
+ -->
+ 
+<hr><hr color="red">
+<em><ins><strong>이것은 두껍고 밑줄이 그려진 기울림꼴 글자입니다.</strong></ins></em>
+<br><br>
+ 
+y = 3x<sup>2</sup> + 4x<sup>2</sup> + 6x + 4<br><br>
+
+H<sup>2</sup>o <br><br>
+
+
+</body>
+</html>
+
+/*======================================================================*/
+
+특수문자.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>특수문자(빌트인 엔티티)</title>
+<!-- 
+	HTML문서에서 특별한 용도로 사용되는 문자를
+	화면에 나타내기 위한 명령으로 '빌트인 엔티티'라 한다.
+	
+	형식) &명령;
+		&gt;	==>	'>'
+		&lt;	==>	'<'
+		&quot;	==>	'"'
+		&amp;	==>	'&'
+		&nbsp;	==> 사이띄기
+ -->
+</head>
+<body>
+
+&lt;abc&gt;<br><br>
+
+<p title="나는 &quot;홍길동&quot;입니다.">홍길동입니다.</p>
+
+&lt;hr color="red"&gt; ==> 빨간색 수평선<br><br>
+
+&amp;lt;은 '<'문자를 나타낸다.<br><br>
+
+글자와 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 글자 사이의 사이띄기<br>
+
+&#189;
+
+</body>
+</html>
+
+/*======================================================================*/
+
+Div와Span.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>div 와 span</title>
+<!-- 
+	태그들의 특징으로 분류
+
+1. 블록 요소
+	1) 줄바꿈 기능이 내장되어 있다.
+	2) 영역의 크기(가로크기, 세로크기)를 지정할 수 있다.
+		(크기를 지정하지 않으면 해당 줄 전체를 차지한다.)
+	예) <div>, <table>, <h1> ~ <h6>, <hr>, <p>
+	    <form>, <ul>, <ol>, <li>, <dl>, <dt>, <dd>
+	    <pre> 등
+		
+2. 인라인 요소
+	1) 줄바꿈 기능이 없다.
+	2) 영역의 크기를 지정할 수 없다.
+		(영역의 크기는 '내용(contents)'의 크기와 같다.)
+	예) <span>, 텍스트서식태그들(<b><strong> 등), <a>, <input>
+	   <label>, <img> 등
+-->
+ 
+ 
+ 
+<!--
+ 	<div>태그와 <span>태그의 용도
+ 	==> 문장이나 문자들을 묶음으로 처리하기 위한 태그
+ 	==> <div>태그는 주로 섹션을 분리할 떄 사용하고,
+ 		<span>태그는 글자나 문장에 style을 지정할 때 주로 사용한다. 
+-->
+
+<!-- 
+	요소(태그)에 style을 지정하는 방법
+	형식) <태그명 style="스타일속성명:스타일속성값; 스타일속성명2:속성값2;..">내용</태그명>
+-->
+ 
+<!-- 
+	색깔을 지정하는 방법
+1. 색의 이름을 영문으로 기술한다.
+2. #RRGGBB형식으로 기술한다.
+	RR ==> Red의 값을 16진수로 표기
+	GG ==> Green의 값을 16진수로 표기
+	BB ==> Blue의 값을 16진수로 표기
+3. rgb(red값, green값, blue값)
+	==> 각 색의 값을 10진수로 표기하거나 %(퍼센트)값으로 표기한다.
+4. rgba(red값, green값, blue값, 투명도값)	
+	==> 투명도는 0 ~ 1사이의 값을 지정할 수 있고, 
+	    0은 완전 투명, 1은 완전 불투명	 
+-->
+ 
+ 
+ 
+</head>
+<!-- <body style="background-color:yellow;"> -->
+<!--  <body style="background-color:#FF00FF"> -->
+<!--  <body style="background-color:rgb(255,255,0);"> -->
+<!-- <body style="background-color:rgb(100%,0%,50%);"> -->
+<!-- <body style="background-color:rgba(255,0,0,0.5);"> -->
+<body>
+
+
+보통글자
+<div style="font-family:궁서체; font-size:30pt; color:blue;">이 영역은 div태그의 영역입니다.</div>
+
+<hr color="blue">
+
+보통글자
+<span style="color:rgb(100%, 0%, 0%); font-size:30px;">이 영역은 span태그의 영역입니다.</span>
+ 
+
+</body>
+</html>
+
+/*======================================================================*/
+
+Div와Span2.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div style="background-color:blue;">블록 요소 div 1 ...</div>
+<div style="background-color:green;">블록 요소 div 2 ...</div>
+<div style="background-color:red;">블록 요소 div 3 ...</div>
+
+<div style="background-color:pink; width:400px; height:100px; border:1px solid blue;">크기를 지정한 div</div>
+
+<br><hr color="green"><br>
+
+<span style="background-color:pink">인라인 요소</span>의
+대표적인 태그가 span태그인데<br>
+<span style="background-color:yellow;">인라인 요소</span>
+크기를 지정할 수 없고, 그 영역 안의 데이터 양에 따라 크기가 결정된다.<br>
+<span style="background-color:cyan; width:400px; height:100px; border:1px solid blue;">크기를 지정한 span</span>
+<!-- span 의 크기를 지정할 순 없다 데이터양만큼 자동 크기 설정됨 -->
+
+
+</body>
+</html>
+
+/*======================================================================*/
+
+이미지.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지</title>
+<!-- 
+	HTML문서에서 이미지를 나타나게 하는 태그는 <img>태그이다.
+	
+	형식) <img src="경로/그림파일명.확장자">
+	
+	<img>태그의 속성
+	width 	==> 이미지의 너비를 설정
+	height	==> 이미지의 높이를 설정
+			==> width나 height속성을 하나만 지정하면 나머지 하나는
+			    그 비율에 맞춰 자동으로 설정된다.
+	alt		==> 이미지가 나타나지 않을 경우에 이미지가 나타날 자리에
+	            출력되는 메시지를 설정한다.
+	            시각 장애인을 위한 스크린 리터를 사용할 때 이미지 대신
+	            사용자가 이해할 수 있는 대체 텍스트를 지정할 때도 사용한다.
+-->
+</head>
+<body>
+<img src="bird.jpg"><br>
+
+<img src="bird.jpg" width="300" height="300"
+	style="border: 5px solid blue;"><br>
+
+<img src="https://www.shutterstock.com/image-vector/car-open-door-34-view-260nw-2638919943.jpg">
+<br><br>
+
+<img alt="새이미지" src="bird2.jpg"><br><br>
+
+<img alt="새이미지" src="bird.jpg" title="아름다운 새입니다."><br><br>
+
+<img alt="" src="./../images/chopa.jpg" width="200"><br><br>
+
+<img alt="" src="../images/chopa.jpg" width="200"><br><br>
+
+<!-- 
+	웹 서비스상에서 절대 경로를 나타낼 때는
+	'/프로젝트명'으로 시작하는 경로를 사용하면 된다.
+	이 위치를 'Context Path'라고 부른다.
+	
+	그리고 이클립스에서 웹프로젝트를 생성했을 때 'Context Path'가
+	가리키는 폴더는 'webapp'폴더이다.
+-->
+
+<img alt="" src="/webTest/images/chopa.jpg" width="200"><br><br>
+</body>
+</html>
+
+/*======================================================================*/
+
+경로연습.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>경로 연습</title>
+</head>
+<body>
+<img src="경로연습.png" width="800" height="320"><br>
+
+<textarea rows="13" cols="55" style="font-size:25pt">
+- 현재폴더 : 작업중인 폴더	==>  .
+- 상위폴더(부모폴더)       	==>  ..
+- 하위폴더(자식폴더)       	==>  폴더명 
+- 최상위폴더(루트폴더)     	==>  /
+--------------------------------------------
+* 경로 : 특정할 파일이 있는 위치를 나타내는 표식
+1) 절대경로 : 루트를 기준으로 찾아가는 경로
+              ('/'로 시작한다.)
+2) 상대경로 : 현재폴더를 기준으로 찾아가는 경로
+              ('./'로 시작하는데 './' 생략 가능하다.)
+절대경로
+/AA/DD/td.png
+
+상대경로
+./../../AA/DD/tg.png
+--------------------------------------------
+*경로에 쓰이는 '/' 문자의 역할
+1) 경로 중간에 있는 '/'문자
+	==> 폴더와 폴더 또는 폴더와 파일을 구분하기 구분자 역할을 한다.
+2) 경로의 첫번쨰 위치의 '/'문자
+	==> 루트를 나타내는 역할을 한다.
+	
+</textarea>
+</body>
+</html>
+
+/*======================================================================*/
+
+링크연결.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크 연결</title>
+</head>
+<!--
+	링크 연결은 <a>태그를 사용한다.
+형식1) <a href="경로명/문서명 또는 URL주소">그림이나 글자</a>
+	==> '그림이나 글자'를 클릭하면 'href'속성에 설정된
+		'문서'나 'URL주소'의 내용을 나타낸다.
+		
+형식2) <a href="mailto:이메일주소">그림이나 글자</a>
+	==> '그림이나 글자'를 클릭하면 이메일을 처리하는 프로그램이
+		자동으로 실행되고, href속성에 지정한 '이메일주소'가
+		받는 사람의 주소란에 자동으로 셋팅된다.
+		(단, '이메일을 처리하는 프로그램'이 설치되어 있을 때만
+			실행할 수 있다.)
+	 
+-->
+<body>
+<a href="https://www.naver.com">네이버 사이트 가기</a><br><br>
+<a href="https://www.daum.net">
+	<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABFFBMVEX////2Zlphi/+qzAD/vgD/uwBciP+lyQCYsf/2X1L2YVT6sq1Zhv//uQD1WUr4iID5m5T+7ez/9uj/3p7j7sJ3mf//5bSvwv9QgP//wQD2Ylz/1H1Ug//7lDr7ubX1Wkzr8P/3fnX/9fT3blPM4H3J3nXG3G37wb30wADy9f/9/vT/4af/8dn/7Mmluv93mv+Bov/Az//4k4v94+H3enD9uGX4hoP2bGH8z8xsk//b5P/5gkT6pqD5h0DN2f/+sBba6Kbw99vOxwDT3/H/24n8nCuRrP+Ap6dym9DswQD/zVBpkuuwywB1ncmHrZ/WxQCdwUmPtIHu1GSSt3aZvVXZ6KD1Tj7R44rr886910/1+ePh7LbqitmDAAADn0lEQVR4nO3ZfVfaVgCA8UsiYCCgRS1g06V2AhOZVbFTrHPqtrbr3NZ2baH6/b/H8nLzTmzPTkuanOf3371ePTznJjeAQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP9vuHvfNQrm5Mzuj9m9rC+o1Sg7GmvBnDf1ILuX9QW1GkuOcrhQTlGYDxTmH4Xfrr2NkCf7yweP5q+7u/DeYHXraOuwPpY/GdcPrfHq4PHXfvmfYVmvROidycG8dXcUdp/+1NRqNq15PLDmT4798cp43h9bqOWKElMxJqfJdXcUPtuslXzm1nilGQxrzbPFtcyXLLQaO+3EutTCxvebpbCaWYuMza0F1swzr1BRjOX4urTCbiwwScs4cX6hYuzF1qUUdn/+VKC1i9leqCmFSuc8ui6l8JdPB5ZKzUyPm7RCRYmum1/YffY5hbXDxTZF+YUTm2L4wbp72swutnu96e1lq5x4vNvRfqCmHZXM8KVZOipp/iDL56JX2HGHp/tGaBMv+2pVUq9+cBOX/F9dKwcXqXlmRZxoQaD9XKx7yeZJNnGOWKEQbS/R+LVfVUOqV+4m/iYXtqxz5vfNyHV44iVpA2dcl8lalmdNolA8lzOVF2rMtbONDTdxZD8qHspCU54lx16hO3wsn/211UVnhSQLH3mb+DJeqFb/cHax++D+2qtGuLB5z/3dFe9pL//Wt1koJrLwz0ShWnVvxnLZPXfyWrghpzaSher1UlheC5X0PVTVqwIUnsr7sPKXe2G6Dwv/Ou3mv3DinaV/O0W9S+u52AsS/8l94b73rkZ/bQeuu7PrfmLkTsxTobFjO21X/Ldt9m1YvfDWXXiJVT+vvLT2nZafQsVw6P57Nv2N3RMs9G/Et92GrfxqV4hcFcY5J2k/WNj3CtfFcDQatZzJPBc6d6HaCxZuB4WBHBfq/6rpexjIb2HljewJFqpFKtSVd17Oe29dcJbmv1A39sS1v2O37rLgeZi7wueGHmZ0Ju0dId4HQf3ZcDgLfRaOFjY1xwev0HTH8vOh+OCOzCwLz9thB+c7zuww9Ok+8rY0VjiuS/KLmIE3lj8/k8Msv8VIMY18gaGmFeZZWmBxCm/SNrEwhWKWklicQnGpxhrdA6dAhWLYq0aO1OnNR2uiSIXWzdgLvvOeDq2JWb9ghcL+v8V0e3t6e+NP3AwzfDUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTLf8oOX/ZjNKbZAAAAAElFTkSuQmCC">	
+</a><br><br>
+
+<a href="./Header태그들.html">Header태그들 문서 보기</a><br><br>
+
+
+<a href="mailto:dcr584@naver.com">관리자에게 메일 보내기</a><br><br>
+</body>
+</html>
+
+/*======================================================================*/
+
+/*======================================================================*/
+
+/*======================================================================*/
+
+/*======================================================================*/
