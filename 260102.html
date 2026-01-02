@@ -1,0 +1,554 @@
+target연습.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<!--
+	<a>태그의 target 속성에 설정할 수 있는 값
+1. _blank : 	새창 또는 새 탭에 결과가 나타난다.
+2. _self : 		현재 프레임 영역에 결과가 나타난다. (기본값)
+3. _parent : 	부모 프레임 영역에 결과가 나타난다.
+4. _top :		무조건 현재 창의 전체 화면 영역에 결과가 나타난다.
+5. 프레임명 : 		해당 '프레임명'에 해당하는 프레임 영역에 결과가 나타난다.	 
+ -->
+<body style="background-color: yellow;">
+
+	<h3>target 연습용 문서</h3>
+	<a href="https://www.daum.net" target="_self"> Daum 사이트 가기(_self)</a>
+	<br>
+	<br>
+
+	<a href="https://www.daum.net" target="_black"> Daum 사이트 가기(_black)</a>
+	<br>
+	<br>
+
+	<a href="https://www.daum.net" target="_parent"> Daum 사이트 가기(_parent)</a>
+	<br>
+	<br>
+
+	<a href="https://www.daum.net" target="_top"> Daum 사이트 가기(_top)</a>
+	<br>
+	<br>
+
+</body>
+
+
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+iframe연습.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe 연습</title>
+</head>
+<!-- 
+	<iframe>태그 ==> 한 문서의 본문 영역에 다른 문서를 넣을 수 있는 태그
+	
+	형식) <iframe src="경로명/파일명 또는 URL주소"></iframe>
+ -->
+<body>
+	<h2>iframe 태그 연습</h2>
+	iframe 태그는 현재의 문서에 다른 문서의 내용을 나타나게 하고 싶은 경우에 사용하는 태그이다.
+	<br>
+	<br> iframe의 속성에는 나타날 문서명이나 URL주소를 지정한다.
+	<br>
+	<br>
+
+	<a href="../251229/이미지.html">이미지 문서 보기</a>
+	<br>
+	<br>
+
+	<a href="../251229/이미지.html" target="test">이미지 문서 보기(target) 설정</a>
+	<br>
+	<br>
+
+	<a href="../251229/이미지.html" target="testtest">이미지 문서 보기(target) 설정</a>
+	<br>
+	<br>
+
+	<iframe src="https://www.daum.net" name="test" width="800" height="600"></iframe>
+	<br>
+	<br>
+
+	<br> iframe 영역의 크기는 width속성과 height속성을 이용하여 설정한다.
+	<br>
+	<br>
+
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+iframe메인.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>iframe 메인 문서</h3>
+
+	<a href="https://www.daum.net" target="_self"> Daum 사이트 가기(_self)</a>
+	<br>
+	<br>
+	
+	<a href="https://www.daum.net" target="_black"> Daum 사이트 가기(_black)</a>
+	<br>
+	<br>
+	
+	<a href="https://www.daum.net" target="_parent"> Daum 사이트 가기(_parent)</a>
+	<br>
+	<br>
+	
+	<a href="https://www.daum.net" target="_top"> Daum 사이트 가기(_top)</a>
+	<br>
+	<br>
+
+	<iframe src="iframe_target연습.html" width="900" height="800"></iframe>
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+iframe_target연습.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="background-color: pink;">
+	<h3>target 연습 문서의 부모 프레임 문서</h3>
+
+	<a href="https://www.daum.net" target="_self"> Daum 사이트 가기(_self)</a>
+	<br>
+	<br>
+	
+	<a href="https://www.daum.net" target="_black"> Daum 사이트 가기(_black)</a>
+	<br>
+	<br>
+	
+	<a href="https://www.daum.net" target="_parent"> Daum 사이트 가기(_parent)</a>
+	<br>
+	<br>
+	
+	<a href="https://www.daum.net" target="_top"> Daum 사이트 가기(_top)</a>
+	<br>
+	<br>
+
+	<iframe src="target연습.html" width="600" height="400"></iframe>
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+책갈피.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>책갈피 기능</title>
+</head>
+<!--
+	<a>태그를 이용하여 책갈피 기능을 구현할 수 있다.
+	
+	- 책갈피 기능
+		==> 문서 내에서 문서의 특정한 위치로 빠르게 이동하는 기능을 말한다.
+		 
+ -->
+<body>
+
+	<h3><a id="top">책갈피 기능 구현하기</a></h3>
+	<a href="#aa">첫째</a> | <a href="#bb">둘째</a> | 
+	<a href="#cc">셋째</a> | <a href="#dd">넷째</a>
+	<hr color="blue">
+	
+	<p>책갈피 기능을 구현하려면 다음과 같은 순서로 설정하고 실행하면 된다.</p>
+
+	<a id="aa">첫째</a>, 문서 내에서 이동할 위치에 a태그를 설정하는데 a 태그의 id 속성에 고유한 이름을 지정한다.
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a href="#top">top으로 이동</a><br><br>
+	
+	<a id="bb">둘째</a>, 링크를 설정할 때 href 속성에 '#id속성값' 형태로 지정한다.<br>
+	     여기서 'id속성값'은 첫쨰에서 설정한 id 속성값들 중 한가지를 말한다.<br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a href="#top">top으로 이동</a><br><br>
+	
+	<a id="cc">셋째</a>, 이제 둘째에서 만들어진 링크를 클릭하면 해당 위치로 바르게 이동하는 것을 확인할 수 있다.<br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a href="#top">top으로 이동</a><br><br>
+	
+	<a id="dd">넷째</a>, 설명 끝~~~~~<br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a href="#top">top으로 이동</a><br><br>
+
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+리스트.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>리스트</title>
+</head>
+
+	<!-- 
+	리스트 종류
+	
+	1. 순서가 없는 리스트 ==> <ul>태그 사용
+	2. 순서가 있는 리스트 ==> <ol>태그 사용
+		==> <ul>태그와 <ol>태그의 하위 태그로 <li>태그를 사용하는데
+			<li>태그에는 리스트에 나타날 항목들을 기술한다.
+	3. 정의 리스트		==> <dl>태그 사용	
+		==> <dl>태그의 하위 태그
+		  1) <dt>태그 ==> 제목을 나타낸다.
+		  2) <dd>태그 ==> 그 내용을 기술한다.		
+ 	-->
+<body>
+
+	<h3>순서가 없는 리스트</h3>
+	
+	<!--
+		<ul>태그의 스타일 속성 'list-style-type'를 이용하여
+		 	블릿기호의 종류를 지정할 수 있다.
+		 	==> disc(●), square(■), circle(○) 
+	 -->
+	<ul style="list-style-type:circle;">
+		<li>사과</li>
+		<li>배</li>
+		<li>복숭아
+			<ol>
+				<li>조치원</li>
+				<li>청주</li>
+				<li>옥천</li>
+			</ol>
+		</li>
+		<li>대추</li>
+		<li>감</li>		
+	</ul>
+	
+	<hr color="red">
+	
+	<h3>순서가 있는 리스트</h3>
+	
+	<!--
+		<ol>태그 속성
+			start ==> 시작 번호를 지정한다. 
+			
+			스타일 속성 'list-style-type'에 설정할 수 있는 값
+				==> decimal(숫자), 
+					lower-roman, upper-roman (로마숫자),
+					lower-alpha, upper-alpha (알파벳),
+					hangul(가, 나, 다, 라, ...),
+					korean-hangul-formal( 일, 이, 삼, 사, ...)
+			
+		<ol>태그의 하위 태그인 <li>태그 속성
+			value ==> 해당 항목의 순번을 변경한다.
+					순번이 변경되면 해당항목 이후에 나오는 항목들도
+					자동으로 순번이 변경된다. 
+		
+	 -->
+	
+	<ol start="6" style="list-style-type:korean-hangul-formal;">
+		<li>서울</li>
+		<li>대전</li>
+		<li>대구
+			<ul style="list-style-type:disc;">
+				<li>사과</li>
+				<li>딸기</li>
+				<li>배</li>
+			</ul>
+		</li>
+		<li>광주</li>
+		<li>부산</li>
+		<li value="1">목포
+			<ol>
+				<li>항구</li>
+				<li>호남선</li>
+			</ol>
+		</li>
+		<li>인천</li>
+		<li>강릉</li>
+	</ol>
+	
+	<hr color="red">
+	
+	<h3>정의 리스트</h3>
+	<!--
+		형식)
+			<dl>
+				<dt>제목</dt>
+				<dd>제목에 대한 설명글 등의 내용을 기술한다.</dd>
+			</dl> 
+	 -->
+	 
+	 <dl>
+	 	<dt>WWW</dt>
+	 	<dd>World Wide Web의 약자로 인터넷을 통칭하는 용어이다.</dd>
+	 	
+	 	<dt>에스프레소</dt>
+	 	<dd>커피의 기본, 커피의 원액을 말한다.</dd>
+	 </dl>
+	 <h3>계절별 야생화</h3>
+	 <dl>
+	 	<dt>봄 꽃</dt>
+	 	<dd>봄에 피는 다년생 식물은 꽃잔디, 금낭화, 할미꽃, 어성초, 복수초, 산마늘, 붓꽃, 둥굴레, 삼지구엽초 등이 있다.</dd>
+	 	
+	 	<dt>여름 꽃</dt>
+	 	<dd>여름에 꽃이 피는 식물은 옥잠화, 비비추, 맥문동, 애란, 수국,<br>
+	 	    인동초, 매발톱, 금계국, 달맞이꽃, 금불초 등이 있다.</dd>
+	 	    
+		<dt>가을 꽃</dt>
+		<dd>가을에 꽃이 예쁜 식물은 구절초, 쑥부쟁이, 감국, 억새,</dd>
+		<dd>갈대, 배초향, 수크렁, 고려엉겅퀴 등이 있다.</dd>
+	</dl>
+	
+	<hr color="red">
+	
+	<!-- 
+		1. 자신의 취미들을 순서가 없는 리스트로 나타내 보시오.
+		2. 자신이 가고 싶은 여행지를 순서가 있는 리스트로 나타내 보시오.
+		3. HTML, Request(요청), Response(응답)에 대하여 설명하시오.
+	 -->
+	 
+	<h3>1. 자신의 취미들을 순서가 없는 리스트로 나타내 보시오.</h3>
+	<ul>
+		<li>음악감상</li>
+		<li>영화감상</li>
+		<li>자전거타기</li>
+	</ul> 
+	
+	<h3>2. 자신이 가고 싶은 여행지를 순서가 있는 리스트로 나타내 보시오.</h3>
+	<ol>
+		<li>부산</li>
+		<li>제주도</li>
+	</ol>
+	
+	<h3>3. Html, Request(요청), Response(응답)에 대하여 설명하시오.</h3>
+	<dl>
+		<dt>Html</dt>
+		<dd>Hyper Text Markup Language이라는 문서 형태<br>
+			웹 페이지를 기술하기 위한 마크 업(markup)언어
+		</dd>
+		
+		<dt>Request(요청)</dt>
+		<dd>클라이언트가 서버로 전달하는 메시지</dd>
+		
+		<dt>Response(응답)</dt>
+		<dd>요청에 대한 서버의 답변 메시지</dd>
+	</dl>
+		
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+표연습.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표(table) 만들기</title>
+</head>
+<body>
+
+	<h3>표 만들기</h3>
+	<table border="1" style="width: 400px; height: 300px;">
+		<tr>
+			<td>1</td>
+			<td>2222</td>
+			<td>33</td>
+			<td>444</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>a<br>b<br>c<br></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>k<br>bs<br></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+
+	</table>
+
+	<br>
+	<hr color="red">
+	<br>
+
+	<table border="1" style="background-color: yellow;">
+		<tr style="height: 100px;">
+			<td style="width: 100px;">11</td>
+			<td style="width: 100px;">222</td>
+			<td style="width: 100px;">3333</td>
+			<td style="width: 100px;">44444</td>
+		</tr>
+		<tr style="height: 100px;">
+			<td>&nbsp;</td>
+			<td>a<br>b<br>c<br></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr style="height: 100px; background-color: cyan;">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td style="background-color: pink;">&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr style="height: 100px;">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr color="blue">
+	<br>
+
+	<table border="1" style="width: 400px; height: 200px;">
+
+		<!--
+		표의 제목 ==> <caption>태그를 사용한다. 
+		
+		표의 제목의 위치 정하기 (style로 설정한다.)
+			==> caption-side : 표의 위쪽(top) 또는 아래쪽(bottom)에 나타나도로고 한다.
+			==> text-align : 내용을 가로방향으로 정렬한다. (left, center, right)
+	 -->
+		<caption style="caption-side: top; text-align: center;">성적표</caption>
+		<!--
+	 	<th>태그의 특징 ==>이 태그의 내용의 글자가 진하고, 가운데 정렬이
+	 					되어서 나타난다.
+	 				==> 각 컬럼의 제목을 나타낼 때 주로 사용한다. 
+	  -->
+		<tr>
+			<th>이름</th>
+			<th>국어</th>
+			<th>영어</th>
+			<th>수학</th>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td>국어</td>
+			<td>영어</td>
+			<td>수학</td>
+		</tr>
+
+		<!--
+			각 셀(cell)의 내용들 정렬하기
+			1. text-align : 내용들을 가로방향으로 정렬한다. (left, center, right)
+			2. vertical-align : 내용들을 세로 방향으로 정렬한다.(top, middle, bottom)
+			
+		 -->
+		<tr>
+			<td><a href="https://www.daum.net">홍길동</a></td>
+			<td style="text-align: center; vertical-align: middle;">100</td>
+			<td style="font-size: 20pt;">100</td>
+			<td>100<br>
+			<img src="../images/water.jpg"></td>
+		</tr>
+
+	</table>
+
+	<br>
+	<hr color="red">
+	<br>
+
+	<!--
+		border-collapse 속성값 
+			==> collapse(border의 간격을 합친다.)
+			==> separate(기본값, border의 간격을 분리한다.) 
+	 -->
+
+	<table border="1"
+		style="width: 400px; border-color: blue; border-collapse: collapse;">
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3">&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2" rowspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+
+
+
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
