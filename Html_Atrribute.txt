@@ -1,0 +1,688 @@
+1) <div>태그와 <span>태그의 용도
+	==> 문장이나 문자들을 묶음으로 처리하기 위한 태그
+	==> <div>태그는 주로 섹션을 분리할 떄 사용하고,
+		<span>태그는 글자나 문장에 style을 지정할 때 주로 사용한다.
+
+
+2) Header 태그들은 태그명이 '<h숫자>' 형태로 되어 있으면 숫자는 1 ~ 6 사이의 값을 갖는다.
+   숫자가 작으면 글자의 크기가 크게 나타난다.
+
+	header 태그들도 <p>태그와 같이 줄바꿈 기능이 있다.
+	header 태그들은 주로 본문의 제목을 나타낼 때 사용한다.
+	<h1>Header 영역 01</h1>
+	<h2>Header 영역 02</h2>
+	<h3>Header 영역 03</h3>
+	<h4>Header 영역 04</h4>
+	<h5>Header 영역 05</h5>
+	<h6>Header 영역 06</h6>
+	<h7>Header 영역 07</h7>
+
+
+3. <pre>태그	
+	==> 줄바꿈이나 사이띄기를 원본과 같게 나타낸다.
+	==> 줄바꿈 기능이 있다.
+
+4. <p>태그는 단락(문단)을 나타내는 태그로 줄바꿈 기능이 있다.
+
+5. 경로연습
+	- 현재폴더 : 작업중인 폴더	==>  .
+	- 상위폴더(부모폴더)       	==>  ..
+	- 하위폴더(자식폴더)       	==>  폴더명 
+	- 최상위폴더(루트폴더)     	==>  /
+	--------------------------------------------
+	* 경로 : 특정할 파일이 있는 위치를 나타내는 표식
+	1) 절대경로 : 루트를 기준으로 찾아가는 경로
+				  ('/'로 시작한다.)
+	2) 상대경로 : 현재폴더를 기준으로 찾아가는 경로
+				  ('./'로 시작하는데 './' 생략 가능하다.)
+	절대경로
+	/AA/DD/td.png
+
+	상대경로
+	./../../AA/DD/tg.png
+	--------------------------------------------
+	*경로에 쓰이는 '/' 문자의 역할
+	1) 경로 중간에 있는 '/'문자
+		==> 폴더와 폴더 또는 폴더와 파일을 구분하기 구분자 역할을 한다.
+	2) 경로의 첫번쨰 위치의 '/'문자
+		==> 루트를 나타내는 역할을 한다.
+
+6. 	링크
+	링크 연결은 <a>태그를 사용한다.
+	형식1) <a href="경로명/문서명 또는 URL주소">그림이나 글자</a>
+		==> '그림이나 글자'를 클릭하면 'href'속성에 설정된
+			'문서'나 'URL주소'의 내용을 나타낸다.
+			
+	형식2) <a href="mailto:이메일주소">그림이나 글자</a>
+		==> '그림이나 글자'를 클릭하면 이메일을 처리하는 프로그램이
+			자동으로 실행되고, href속성에 지정한 '이메일주소'가
+			받는 사람의 주소란에 자동으로 셋팅된다.
+			(단, '이메일을 처리하는 프로그램'이 설치되어 있을 때만 실행할 수 있다.)
+
+7. 이미지
+	HTML문서에서 이미지를 나타나게 하는 태그는 <img>태그이다.
+	
+	형식) <img src="경로/그림파일명.확장자">
+	
+	<img>태그의 속성
+	width 	==> 이미지의 너비를 설정
+	height	==> 이미지의 높이를 설정
+			==> width나 height속성을 하나만 지정하면 나머지 하나는
+			    그 비율에 맞춰 자동으로 설정된다.
+	alt		==> 이미지가 나타나지 않을 경우에 이미지가 나타날 자리에
+	            출력되는 메시지를 설정한다.
+	            시각 장애인을 위한 스크린 리터를 사용할 때 이미지 대신
+	            사용자가 이해할 수 있는 대체 텍스트를 지정할 때도 사용한다.
+				
+8. HTML 요소(Element)
+	형식1) <시작태그명 속성명 ="속성값" ...>컨텐츠(내용) </종료태그명>
+		==> 시작태그명과 종료태그명은 같다.
+		==> 컨텐츠 자리에는 '문자열', '자식요소'가 올 수 있다.
+		==> 속성은 요소의 성질, 특징을 정의하는 것으로 요소의 추가적인 정보를 제공한다.
+
+	형식2) <시작태그명 속성명="속성값" ...>
+		==> 컨텐츠가 없으면 종료태그도 없고 속성만 설정할 수 있다.
+		==> 예) <meta>, <br>, <hr>, <img>, <link>, <input> 등
+		
+9. 텍스트 서식
+	보통글자<br>
+	<b>두꺼운 글자체(b태그)</b><br>
+	<strong>두꺼운 글자체(strong태그)</strong><br><br> <!-- 중요한 텍스트에 사용(중요성, 긴급함 강조) -->
+
+	<i>기울림꼴 글자(i태그)</i><br>
+	<em>기울림꼴 글자(em태그)</em><br><br><!-- 문맥상 강조할 텍스트 -->
+
+	<u>밑줄 문자(u태그)</u><br>
+	<ins>밑줄 문자(ins))</ins><br><br> <!-- 새로 추가된 텍스트 표시 -->
+
+	<s>취소선(s태그)</s><br>
+	<strike>취소선(strike태그)</strike><br>
+	<del>취소선(del태그)</del><br><br> <!-- 삭제된 텍스트 표시 -->
+
+	<mark>하이라이트</mark><br><br>
+
+	다음은 화면에 문자열을 출력하는 자바 코드입니다.<br>
+	<code>
+		System.out.println("안녕하세요");
+	</code><br><br>
+
+	보통글자<sup>위첨자(sup태그)</sup><br><br>
+	보통글자<sub>아래첨자(sub태그)</sub><br><br>
+
+10. hr 태크
+	<hr>태그 ==> 수평선을 그려주는 태그
+	
+11. 특수문자
+	HTML문서에서 특별한 용도로 사용되는 문자를
+	화면에 나타내기 위한 명령으로 '빌트인 엔티티'라 한다.
+	
+	형식) &명령;
+		&gt;	==>	'>'
+		&lt;	==>	'<'
+		&quot;	==>	'"'
+		&amp;	==>	'&'
+		&nbsp;	==> 사이띄기
+
+12. iframe
+	<iframe>태그 ==> 한 문서의 본문 영역에 다른 문서를 넣을 수 있는 태그
+	
+	형식) <iframe src="경로명/파일명 또는 URL주소"></iframe>
+	<iframe src="https://www.daum.net" name="test" width="800" height="600"></iframe>
+
+13. target
+	<a>태그의 target 속성에 설정할 수 있는 값
+	1. _blank : 	새창 또는 새 탭에 결과가 나타난다.
+	2. _self : 		현재 프레임 영역에 결과가 나타난다. (기본값)
+	3. _parent : 	부모 프레임 영역에 결과가 나타난다.
+	4. _top :		무조건 현재 창의 전체 화면 영역에 결과가 나타난다.
+	5. 프레임명 : 		해당 '프레임명'에 해당하는 프레임 영역에 결과가 나타난다.
+
+14. 리스트
+	리스트 종류
+	
+	1. 순서가 없는 리스트 ==> <ul>태그 사용
+	2. 순서가 있는 리스트 ==> <ol>태그 사용
+		==> <ul>태그와 <ol>태그의 하위 태그로 <li>태그를 사용하는데
+			<li>태그에는 리스트에 나타날 항목들을 기술한다.
+	3. 정의 리스트		==> <dl>태그 사용	
+		==> <dl>태그의 하위 태그
+		  1) <dt>태그 ==> 제목을 나타낸다.
+		  2) <dd>태그 ==> 그 내용을 기술한다.	
+		  
+
+	<ul>태그의 스타일 속성 'list-style-type'를 이용하여
+		 	블릿기호의 종류를 지정할 수 있다.
+		 	==> disc(●), square(■), circle(○) 
+
+	<ol>태그 속성
+			start ==> 시작 번호를 지정한다. 
+			
+			스타일 속성 'list-style-type'에 설정할 수 있는 값
+				==> decimal(숫자), 
+					lower-roman, upper-roman (로마숫자),
+					lower-alpha, upper-alpha (알파벳),
+					hangul(가, 나, 다, 라, ...),
+					korean-hangul-formal( 일, 이, 삼, 사, ...)
+			
+	<ol>태그의 하위 태그인 <li>태그 속성
+		value ==> 해당 항목의 순번을 변경한다.
+				순번이 변경되면 해당항목 이후에 나오는 항목들도
+				자동으로 순번이 변경된다. 
+	
+	정의 리스트
+	<dl>
+		<dt>제목</dt>
+		<dd>제목에 대한 설명글 등의 내용을 기술한다.</dd>
+	</dl> 
+
+
+
+15. 책갈피
+	<a>태그를 이용하여 책갈피 기능을 구현할 수 있다.
+	
+	- 책갈피 기능
+		==> 문서 내에서 문서의 특정한 위치로 빠르게 이동하는 기능을 말한다.
+		
+	<h3><a id="top">책갈피 기능 구현하기</a></h3>
+	<a href="#aa">첫째</a> | <a href="#bb">둘째</a> | 
+	<a href="#cc">셋째</a> | <a href="#dd">넷째</a>
+	<hr color="blue">
+	
+	<p>책갈피 기능을 구현하려면 다음과 같은 순서로 설정하고 실행하면 된다.</p>
+
+	<a id="aa">첫째</a>, 문서 내에서 이동할 위치에 a태그를 설정하는데 a 태그의 id 속성에 고유한 이름을 지정한다.	
+
+
+16. fieldset
+	<fieldset>태그 ==> 입력 요소들을 그룹으로 묶어서 나타내고 싶을 때 사용
+	<legend>태그 ==> fieldset의 제목을 지정할 때 사용		
+
+17. form태그와 입력요소들
+	<form>태그 ==> 사용자 <form>태그의 하위 태그인 입력 요소들을 이용하여
+				  작성한 데이터들을 서버로 전송하는 역할을 담당하는 태그이다.
+	형식) <form name="폼이름" action="처리할문서명"
+			   method="전송방식" enctype="인코딩방식">
+			   
+			입력 요소들...
+			
+			</form>
+	
+	- 처리할 문서명	==> <form>에서 보내온 데이터를 서버단에서 받아서 처리해줄 문서를 지정한다.
+	
+	- 전송 방식	==> GET 또는 POST 방식이 있다.
+		1) GET방식	==> URL주소 뒤에 데이터들을 붙여서 전송하는 방식
+			(데이터가 노출 가능하고 적은 양의 데이터를 전송할 때 사용한다.)
+		2) POST방식	==> HTTP프로토콜의 body영역에 데이터를 넣어서 전송하는 
+			(많은 양의 데이터를 전송하거나 데이터를 감춰서 보내야할 데이터를 전송할 때 주로 사용한다.)
+			
+	- 인코딩 방식 ==> 보통의 데이터를 전송할 때는 이 속성을 생략한다.
+			그렇지만 파일을 전송할 경우에는 다음과 같이 기술한다.
+			(기본값 : application/x-www-form-urlencoded
+			 파일전송 : multipart/form-data)
+	============================================================================
+	입력 요소들
+		==> <input> 태그, <textarea>태그, <select>태그, <button>태그	
+
+
+	<!-- 한 줄의 데이터를 입력할 때 사용 -->
+	1. text 객체 : <input type="text" name="aa"><br><br>
+	
+	<!-- 암호를 입력할 때 사용 -->
+	2. password객체 : <input type="password" name="bb"><br><br>
+	
+	<!-- check된 데이터를 전송한다. -->
+	<!-- 0개 이상의 데이터를 한꺼번에 선택할 수 있다. -->
+	3. checkbox 객체 : 
+		<input type="checkbox" name="cc" value="seoul">서울
+		<input type="checkbox" name="cc" value="deajeon">대전
+		<br><br>
+		
+	<!-- check된 데이터를 전송한다. -->
+	<!-- 여러개의 radio객체 중 한 개만 선택할 수 있다. -->
+	4. radio 객체
+		<input type="radio" name= "dd" value= "100">100
+		<input type="radio" name= "dd" value= "90">90
+		<input type="radio" name= "dd" value= "80">80
+		<br><br>
+	
+	<!-- 서버로 전송할 파일을 선택할 때 사용한다. -->
+	5. file 객체 : <input type ="file" name="ee"><br><br><br>
+	
+	<!-- 여러 줄의 내용을 입력할 때 사용한다. 
+		rows 속성 : 입력할 영역의 줄 수
+		cols 속성 : 입력할 영역의 칸 수 
+	-->
+	6. textarea 객체 :
+		<textarea name= "ff" rows= "10" cols= "50"></textarea>
+		<br><br>
+	
+	<!-- 여러 개의 항목들 중에서 데이터를 선택할 수 있게 하는 객체 -->	
+	7. select 객체 : <br>
+		7-1. 콤보박스 : 
+			<select name= "gg"> 
+				<option value= "sk">SKT</option>
+				<option value= "lg">LG U+</option>
+				<option value= "kt">KT</option>				
+			</select><br><br>
+			
+		7-2. 리스트박스 : 
+			<select name= "hh" size= "6"> 
+				<option value= "sk">SKT</option>
+				<option value= "lg">LG U+</option>
+				<option value= "kt">KT</option>				
+			</select>
+			<br><br>
+		
+		<!-- 
+			초기화(reset)버튼 : 입력한 내용들을 처음 상태로 변경한다.
+			전송(submit)버튼 : 입력한 내용들을 서버로 전송한다.  
+			일반버튼 : 사용자가 지정한 기능을 수행한다.
+					 (javascript를 이용하여 기능을 구현한다.)
+		-->
+		8. 버튼들 :
+			<input type= "button" value= "일반버튼">
+			<input type= "reset" value= "초기화버튼">
+			<input type= "submit" value= "전송버튼">
+			<br><br>
+			
+		<!-- 
+			지정한 이미지를 '전송버튼'으로 사용하고 싶을 때 사용한다.
+		-->
+		9. image 객체 : <input type= "image" src= "../images/water.jpg">
+		<br><br>
+		
+		<!--
+			화면에는 출력되지 않지만 서버로 전송해야 할 데이터를 구성할 때 사용한다. 
+		-->
+		10. hidden 객체 : <input type= "hidden" name= "ii" value= "test">
+
+18. html5입력요소
+
+	이메일 : <input type ="email" name= "email"><br><br>
+	URL : <input type= "url" name= "url"><br><br>
+	전화번호 : <input type= "tel" name= "tel"><br><br>
+	색상 : <input type= "color" name= "cc"><br><br>
+	날짜 : <input type= "date" name= "dd"><br><br>
+	월 : <input type= "month" name= "ee"><br><br>
+	주 : <input type= "week" name= "ff"><br><br>
+	시간 : <input type= "time" name= "gg"><br><br>
+	지역 시간 : <input type= "datetime-local" name= "hh"><br><br>
+	숫자 : <input type= "number" name= "ii" min= "1" max= "10" step= "2"><br><br>
+	범위 : <input type= "range" name= "jj" min= "1" max= "10" step= "2"><br><br>
+			
+	<input type= "submit" value= "데이터 전송">
+
+
+19. 멀티미디어
+	<audio>태그 ==> 소리를 재생한다.
+	형식) <audio src="경로명/파일명.확장자"></audio>
+	
+	<audio>태그에서 지원하는 파일 형색 ==> mp3, wav, ogg
+	
+	<audio>태그의 속성
+		- controls	==> 소리를 재생, 정지, 볼륨조절을 할 수 있는 객체들을 나타낸다.
+		- autoplay	==> 자동 재생
+		- muted		==> 무음처리(볼륨 0)
+		- loop		==> 반복 재생
+	
+	<video>태그 ==> 동영상을 재생한다.
+	형식) <video src="경로명/파일명.확장자"></video>
+	
+	<video>태그의 지원 형식	==> mp4. webm, ogv
+	
+	<video>태그의 속성
+		- width		==> 재생 화면의 너비(가로 크기)
+		- height	==> 재생 화면의 높이(세로 크기)
+		- autoplay
+		- loop
+		- muted
+		- poster	==> 재생하기 전의 재생 화면에 나타날 그림을 지정한다.
+		
+	<source>태그		==> <audio>나 <video>태그를 구성할 때
+							재생할 파일들을 설정하는 태그이다.
+							(<audio>태그나 <video>태그의 하위 태그)
+							
+		==> <audio>나 <video>태그에 <source>태그가 여러개 있으면
+			위에서 부터 차례로 재생여부를 검사하여 재생할 수 있는 파일이 있으면
+			그 파일을 재생한다.(호환성을 높이기 위해서 사용한다.) 
+
+
+20. CSS(Cascading Style Sheet)
+
+	CSS(Cascading Style Sheet)
+			==> 문서의 장식(스타일)을 정의한다. (글꼴, 색, 크기 등을 설정한다.)
+
+	- 문서에 CSS를 적용하는 방법
+	1. 인라인 CSS
+		==> 태그에 style 속성을 사용해서 직접 CSS를 지정하는 방법
+		형식)<태그명 style="속성명1:속성값1; 속성명2:속성값2;, ...">내용</태그명>
+
+	2. 내부 CSS
+		==> HTML문서 안에 <style>태그를 이용하여 CSS를 지정하는 방법
+		형식)
+			<style type="text/css">
+				셀렉터 { 속성명1:속성값1; 속성명2:속성값2; ...}
+			</style>
+
+	3. 외부 CSS
+		==> 스타일을 저으이한 파일을 따로 만들고 이것이 필요한 문서에서 이 파일을
+			읽어와 적용하는 방법
+		==> 여러개의 HTML문서에서 동일한 스타일을 적용할 때 사용한다.
+			(외부 CSS문서의 확장자는 '.CSS'이다.)
+		==> 외부 CSS를 읽어와 문서에 적용시키는 방법
+			(<head>태그의 하위 태그인 <link>태그를 사용한다.)
+		형식) <link type="text/css" rel="stylesheet" href="경로명/파일명.css">
+	
+	
+	/* style 태그 영역 안에서의 주석 처리 입니다. */
+				
+		/* 
+			CSS의 기본 형식 
+			
+			셀렉터 { 속성명1:속성값1; 속성명2:속성값2; ...}
+			
+			셀렉터 ==> 스타일을 적용할 대상을 나타내는 방법을 말한다.
+		*/
+		
+		/*
+			셀렉터의 종류
+			1. * { 스타일 정의 } : 모든 엘리먼트에 스타일을 적용한다.
+			
+			*{font-size: 15pt; color: green; }
+			
+		*/
+		
+		/*
+			2. 태그명 { 스타일 정의 }
+				==> 지정한 '태그명에' 해당되는 곳에 스타일을 적용한다.
+		
+			div { color: red; font-size: 25pt; }
+			p{ color: blue; font-family: 궁서체; font-size: 30pt; }
+		*/
+		
+		/*
+			3. 태그명.class속성값 { 스타일 정의 }
+				==> 지정한 '태그명'에 해당되는 것들 중에서 'class' 속성의 속성값이
+					'class속성값'과 같은 곳에 스타일을 적용한다.
+					
+			p.test{ color: red; text-decoration: underline; }
+					
+		*/
+		
+		/*
+			4.	*.class속성값 { 스타일 정의 }
+				==> 모든 태그들 중에서 'class'속성의 속성값이 'class속성값'과 같은 곳에
+					스타일을 적용한다.
+			.test {color: blue; font-family: 궁성체; font-size: 20pt; }
+		*/
+		
+		/*
+			5. 태그명#id속성값 { 스타일 정의 }
+				==> 지정한 '태그명'들 중에서 'id'속성의 속성값이 'id속성값'과 같은 곳에
+					스타일을 적용한다.
+			div#myid { color: red; font-size: 20pt; text-decoration: overline; }
+		*/
+		
+		/*
+			6.	#id속성값 { 스타일 정의 }
+				==> 모든 태그들 중에서 'id'속성의 속성값이 'id속성값'과 같은 곳에
+					스타일을 적용한다.
+			#myid { color: gold; font-size: 15pt; font-family: 궁서체; }
+		*/
+		
+		/*
+			7. 셀렉터1, 셀렉터2, 셀렉터3, ... { 스타일 정의 }
+				==> 각각의 셀렉터에 해당되는 모든 곳에 스타일을 적용한다.
+			div, p { color: red; font-size: 20pt; }
+			
+			#myid, .test { color: blue; font-family: 궁서체;}
+		*/
+		
+		/*
+			8. 셀렉터1 셀렉터2 { 스타일 정의 }
+				==> '셀렉터1'의 자손 중에서 '셀렉터2'에 해당되는 곳에 스타일을 적용한다.
+				
+			body span { color: red; font-size: 30pt; }
+			div span { color: green; font-family: 궁서체;  font-size: 30pt;}
+		*/
+		
+		/*
+			9. 셀렉터1 > 셀렉터2 { 스타일 정의 }
+				==> '셀렉터1'의 자식 중에서 '셀렉터2'에 해당되는 곳에 스타일을 적용한다.
+				
+			body > span { color: red; font-size: 30pt; }
+			div > span { color: green; font-family: 궁서체; font-size: 30pt; }
+		*/
+		
+		/*
+			10. 셀렉터1 + 셀렉터2 { 스타일 정의 }
+				==> '셀렉터1'의 뒤에 오는 모든 형제가 '셀렉터2'에 해당되면 스타일을 적용한다.
+			p#myid + div { color: blue; font-size: 30pt;}
+		*/
+		div.test + p { color: red; font-size: 50pt; }
+		
+		/*
+			11. 셀릭터1 ~ 셀렉터2 { 스타일 정의 }
+				==> '셀렉터1'의 뒤에 오는 모든 형제들 중에서 '셀렉터2'에 해당되는 곳에 스타일을 적용한다.
+			p#myid ~ div { color: blue; font-size: 30pt; }
+		*/
+
+
+
+
+
+21. CSS 속성 선택자
+	CSS의 속성 선택자 사용법
+						
+		1) 셀렉터[속성명]	==> '셀렉터'에 해당되는 요소들 중에서 지정한 '속성명'이 있는 요소를 선택한다.
+		
+		2) 셀렉터[속성명=값] ==> 지정한 '속성명'에 설정된 값이 '값'과 일치되는 요소를 선택한다.
+		
+		3) 셀렉터[속성명^=값] ==> '속성명'에 설정된 값이 '값'으로 시작하는 요소를 선택한다.
+		
+		4) 셀릭터[속성명$=값] ==> '속성명'에 설정된 값이 '값'으로 끝나는 요소를 선택한다.
+		
+		5) 셀렉터[속성명*=값] ==> '속성명'에 설정된 값이 '값'이 포함되어 있는 요소를 선택한다.
+		
+		6) 셀렉터[속성명|=값] ==> '속성명'에 설정된 값이 '값'과 같거나 '값-'로 시작하는 요소를 선택한다.
+		
+		7) 셀렉터[속성명~=값] ==> '속성명'에 설정된 값에 '값'의 단어가 있는 요소를 선택한다.
+								(즉, 공백으로 구분된 값 찾기)
+
+
+20. CSS_외부 적용
+	<head>
+		<style>
+			여기에 적용
+		</style>
+	</head>
+
+
+21. 의사 클래스
+	/*
+	- 의사 클래스 ==> 선택하고자 하는 요소의 특별한 상태를 명시할 때 사용한다.
+		형식) 셀렉터: 의사클래스형 { 스타일 정의 }
+	*/
+	
+	/*
+		1. 동적 의사 클래스
+		a:link		==> 방문한 내역이 없는 링크 걸린 부분에 스타일이 적용된다.
+		a:visited	==> 방문한 내역이 있는 링크 걸린 부분에 스타일이 적용된다.
+		
+		셀렉터:hover	==> '셀렉터'에 해당되는 곳에 마우스 커서가 놓였을 때 스타일이 적용된다.
+		셀렉터:active	==> '셀렉터'에 해당되는 곳을 클릭하는 순간에 스타일이 적용된다.
+		셀렉터:focus	==> '셀렉터'에 해당되는 곳에 focus가 오면 스타일이 적용된다.
+		
+		2. 상태 의사 클래스
+		셀렉터:checked	==> checkbox나 radio버튼이 체크된 상태와
+							<select>태그의 <option>중 선택된 상태일 때 스타일이 적용된다.
+		셀렉터:enabled	==> 입력 요소들이 enabled 상태일 때 스타일이 적용된다.
+		셀렉터:disabled	==> 입력 요소들이 disabled 상태일 때 스타일이 적용된다.
+		
+		3. 기타 의사 클래스
+		셀렉터1:not(셀렉터2)	  ==> '셀렉터1'에 해당되는 요소들 중에서 '셀렉터2'에 해당되지 않는
+								  요소에 스타일이 적용된다.
+	*/
+	
+	/*----------------------------------------------*/
+	/* 동적 의사 클래스 연습*/				
+	/*
+	a:link{ color: green; }
+	a:visited { color: red; }
+	*/
+
+
+
+
+
+22. CSS 구조기반 의사 클래스
+	웹 문서의 구조를 기반으로 특정 요소를 선택하는 방법
+	(자식 요소들의 순번을 이용해서 선택한다.)
+		
+	1) 셀렉터:nth-child(번호)
+		==> '셀렉터'의 부모의 모든 자식들 중에서 '번호'번쨰 요소가
+			'셀렉터'와 일치하는 요소를 선택한다. (번호는 1부터 시작한다.)
+	2) 셀렉터:nth-child(odd)
+		==> '셀렉터'의 부모의 모든 자식들 중에서 '홀수'번째 요소가
+			'셀렉터'와 일치하는 요소를 선택한다.
+	3) 셀렉터:nth-child(even)
+		==> '셀렉터'의 부모의 모든 자식들 중에서 '짝수'번째 요소가
+			'셀렉터'와 일치하는 요소를 선택한다.
+	4) 셀렉터:nth-child(xn + y)
+		==> x, y는 숫자 (양수, 음수 모두 가능)
+		==> 위의 식에서 'n'자리에 0,1,2,3,...의 정수를 차례로 대입하여
+			계산된 결과값으로 선택할 위치를 구한다.
+	5) 셀렉터:first-child()
+		==> 첫번째 요소 찾기, nth-child(1)와 같다.
+	6) 셀렉터:last_child()
+		==> 마지막번째 요소 찾기
+	7) 셀렉터:only_child
+		==> 하나밖에 없는 요소 찾기
+	8) 셀렉터:nth-last-child(번호)
+		==> '셀렉터'의 부모의 모든 자식들 중에서 뒤에서 '번호'번째 요소가
+			'셀렉터'와 일치하는 요소를 선택한다.(번호는 1부터 시작한다.)
+			
+		셀렉터:nth-last-child(odd), 셀렉터:nth-last-child(even),
+		셀렉터:nth-last-child(xn+y)도 동일하게 적용된다.
+	
+	셀렉터:nth-of-type(번호)
+		==> '셀렉터'의 부모의 모든 자식들 중에서 '셀렉터'와 일치하는 요소들 중에서
+			'번호'번째의 요소를 선택한다.
+	셀렉터:nth-of-type(odd), 셀렉터:nth-of-type(even),
+	셀렉터:nth-of-type(xn + y)도 동일하게 적용된다.
+	
+	
+	셀렉터:nth-last-of-type(번호)
+		==> '셀렉터'의 부모의 모든 자식들 중에서 '셀렉터'와 일치하는 
+			요소들 중에서 뒤에서 '번호'번째 요소를 선택한다.
+	셀렉터:nth-last-of-type(odd), 셀렉터:nth-last-of-type(even),
+	셀렉터:nth-last-of-type(xn + y)도 동일하게 적용된다.
+
+
+
+23. 배경 이미지 설정
+
+	형식) background-image: url('경로명/그림파일명.확장자');
+	
+	- CSS에서 상대경로를 설정할 떄 기준위치(현재위치)
+	 1) 인라인 CSS, 내부 CSS ==> HTML문서의 저장위치
+	 2) 외부 CSS		==> 외부 CSS 파일의 저장 위치
+	 
+	- background-repeat : 배경이미지의 반복 여부를 설정한다.
+		repeat (상하 좌우 반복 ==> 기본값)
+		no-repeat (반복하지 않는다.) 
+		repeat-x, repeat-y (x축, y축 방향으로만 반복)
+		
+	- background-position : 배경이미지의 위치를 설정한다.
+		top, center, bottom ==> 상하 방향
+		left, center, right ==> 좌우 방향
+	
+	-background-attachment : 배경의 스크롤 여부 설정
+		local
+		scroll
+		fixed (배경은 스크롤되지 않고 내용만 스크롤된다.)
+	
+	border-radius: 50px;	/* 둥근 테두리선 (꼭지점 모따기) */
+
+
+24. display
+	- display	==> inline 요소와 block 요소의 성질을 변경할 수 있다.
+				==> none;	(해당 요소를 출력하지 않는다.)
+				==> block;	(block 요소로 나타낸다.)
+				==> inline;	(inline 요소로 나타낸다.)
+				==> inline-block;	(줄바꿈이 없는 block요소가 된다.)
+				==> table-cell	(table의 cell과 같은 성질로 나타낸다.)
+
+
+
+25. list에 지정하는 스타일
+
+	- list-style-type	==> 블릿기호를 설정한다.
+		(
+		종류	:
+			decimal(숫자), 
+			lower-roman, upper-roman (로마숫자),
+			lower-alpha, upper-alpha (알파벳),
+			hangul(가, 나, 다, 라, ...),
+			korean-hangul-formal( 일, 이, 삼, 사, ...)
+			none (블릿기호를 출력하지 않는다.)
+		)
+	- list-style-image: url("경로명/그림파일명.확장자")
+		==> 블릿 기호 대신 지정한 이미지로 출력한다.
+
+26. CSS_boxsizing
+	-box-sizing 속성
+	1) content-box	==> padding, border, margin을 제외한 순수한 content의 크기가 된다.
+	2) border-box	==> 설정한 크기가 content + padding + border + margin의 크기가 된다. 
+
+27. Box 모델
+- box모델에 margin과 padding이 적용되는 순서
+	예)	margin: 값1 값2 값3 값4	==> 위쪽, 오른쪽, 아래쪽, 왼쪽
+		margin: 값1 값2 값3		==> 위쪽, 좌우, 아래쪽
+		margin: 값1 값2			==> 상하, 좌우
+		margin: 값1				==> 상하좌우 4군데 모두
+		
+	- 인접한 요소들의 margin 값은 교집합 형태로 적용된다.
+	  (즉 인접한 값중 큰 값의 margin이 적용된다.)
+	
+	- 블록요소의 box모델을 가운데 정렬하기
+		==> margin의 좌우값을 auto로 지정하면 된다.
+
+28. CSS_float
+	float : 요소들을 물 흐르듯이 차례로 배치하는 기능
+		속성값
+			left:	왼쪽으로 붙이면서 배치된다.
+			right:	오른쪽으로 붙이면서 배치된다.
+	
+	clear : float의 기능을 없앤다.
+		속성값
+			left: float의 설정값이 left인것만 줄바꿈
+			right: float의 설정값이 right인것만 줄바꿈
+			both: left, right 모두 줄바꿈
+
+29. CSS_opacity_visibility
+
+	opacity : 불투명도를 나타낸다. (0 ~ 1 사이의 값을 사용한다.)
+			  (0: 완전 투명, 1: 오나전 불투명)
+	
+	visibility : 화면에 보이게 하거나 보이지 않게 설정한다.
+				 (hidden: 안보이게 한다, visible: 보이게 한다.(기본값))
+				 
+	display속성을 none값으로 설정하면 해당 객체가 출력도 되지 않은 상태가 된다.
+	
+
+30. CSS_overflow
+	요소안의 내용이 요소에 지정된 크기보다
+	많아서 요소의 지정된 영역을 벗어나면
+	이 벗어난 영역에 대한 처리를 overflow 속성을 이용하여 처리한다.
+	overflow의 속성값이 'hidden'이면 벗어난 값들이 보이지 않고
+	속성값이 'scroll'이면 범위를 벗어난 값들을 보이기 위해
+	스크롤바가 생기고, 속성값이 'auto'이면 값의 양에 따라
+	자동으로 스크롤바가 생기거나 생기지 않는다.
+	
+	overflow: hidden;
+	overflow: scroll;
+	overflow: auto;
+
+
+31. 
