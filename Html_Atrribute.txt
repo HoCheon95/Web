@@ -663,7 +663,7 @@
 29. CSS_opacity_visibility
 
 	opacity : 불투명도를 나타낸다. (0 ~ 1 사이의 값을 사용한다.)
-			  (0: 완전 투명, 1: 오나전 불투명)
+			  (0: 완전 투명, 1: 완전 불투명)
 	
 	visibility : 화면에 보이게 하거나 보이지 않게 설정한다.
 				 (hidden: 안보이게 한다, visible: 보이게 한다.(기본값))
@@ -685,4 +685,125 @@
 	overflow: auto;
 
 
-31. 
+31. css_position
+260109/css_position연습.html
+
+	요소의 출력 위치를 지정하는 방법을	
+		==> left, top, bottom, rigth 속성을 이용해서 출력위치를 지정한다.
+		==> 그런데 이 속성들은 position 속성의 영향을 받는다.
+		
+		1) left : 왼쪽에서부터 떨어진 거리 (x축 좌표)
+		2) right : 오른쪽끝에서부터 떨어진 거리
+		
+		3) top : 위에서부터 떨어진 거리 (y축 좌표)
+		4) bottom : 아래쪽끝에서부터 떨어진 거리
+		
+		5) position : 좌표를 설정하는 기준을 나타낸다.
+			- static : 기본적인 흐름에 맞게 위치가 결정된다.
+					   (기본값, 출력위치를 임의의 변경할 수 없다.)
+			- relative : 정상적으로 출력될 위치를 기준으로 상대적인 위치를 정한다.
+			- absolute : 컨테이너의 원점을 기준으로 위치를 결정한다.
+						 (컨테이너 ==> 자신을 포함하는 요소(부모요소))
+			- fixed : 브라우저 창을 기준으로 위치를 결정한다.
+					  (fixed로 위치를 설정하면 스크롤되어도 항상 같은 위치)
+			- sticky : 스크롤 영역을 기준으로 위치를 결정한다. (지원 x)
+
+
+32. css_float_layout
+260109/css_float_layout.html
+	
+
+33. css_zIndex
+260109/css_zIndex.html
+	
+	z-Index : 요소가 출력되는 계층 번호를 지정한다.
+			  계층 번호는 값이 클수록 앞쪽에 배치된다.
+
+34. css_zIndex연습2
+260109/css_zIndex연습2.html
+	
+35. 레이아웃_div
+260109/레이아웃_div.html
+
+36. 레이아웃_semantic
+260109/레이아웃_semantic.html
+
+	<header>	문서의 머리말 홈페이지 상단에 로고나 메인 메뉴를 포함
+	<footer> 	문서의 꼬리말(바닥글)로서 한 페이지에 한 번만 작성
+	<section>	제목이 있는 주제별 콘텐츠 영역
+	<aside>		좌우측 사이드 바
+	
+37. flexboxTest01
+260109/flexboxTest01.html
+	
+	display 속성 'flex'로 지정한 요소가 'flex Container'가 된다.
+	'flex Container'의 자식 요소들은 'flex Item"이 된다.
+	
+		display: inline-flex; 
+	
+	
+	주 축, 교차 축 설정하기 
+	
+	flex-direction: row;  주축(수평축), 교차축(수직축)))  
+	flex-direction: row-reverse;  주축(수평축), 교차축(수직축)))  
+	
+	flex-direction: column;  주푹(수직축), 교차축(수평축) 
+	flex-direction: column-reverse;  주푹(수직축), 교차축(수평축) 
+	
+	item의 여러 줄 묶음(줄바꿈)을 설정한다. 
+	
+	flex-wrap: nowrap;  기본값 (한 줄로 표시한다.) 
+	flex-wrap: wrap; 		 줄바꿈 허용 
+	flex-wrap: wrap-reverse; 	 wrap의 역방향으로 줄바꿈 
+	
+	
+	flex-direction과 flex-wrap을 한꺼번에 설정하기 
+	flex-flow: row wrap;	이런것을 단축 속성이라 한다. 
+	
+	-------------------------------------------------- 
+	
+	주 축을 기준으로 정렬하기 ==> justify-content 
+	justify-content: stretch; 		기본값 (item의 height값이 없을 때) 
+	justify-content: flex-start; 
+	justify-content: flex-end; 
+	justify-content: center; 
+	justify-content: space-around; 
+	justify-content: space-between; 
+	justify-content: space-evenly; 
+	
+	-------------------------------------------------- 
+	
+	교차 축을 기준으로 정렬하기 
+	
+	align-content ==> 2줄 이상일 때 
+	align-content: flex-start; 
+	align-content: flex-end; 
+	align-content: center; 
+	align-content: space-around; 		균등 분할 
+	align-content: space-between; 		첫번쨰와 마지막 요소는 끝에 붙여 놓고 균등 분할 
+	align-content: space-evenly; 		모든 여백을 고르게 분배 
+	
+	
+	align-items ==> 한 줄일 때 사용 
+	align-items: flex-start; 
+	align-items: flex-end;
+	align-items: center;
+	align-items: baseline;
+	gap : 3em;	 	각 item 사이의 간격 설정
+
+38. flexboxTest02
+260109/flexboxTest02.html
+	
+	flex box의 item에 설정하는 속성들
+	
+	- order ==> 배치 순서를 정한다. (기본값 : 0)
+	- flex-grow ==> 증가 비율을 설정한다. (기본값 : 0)
+				==> 빈 여백을 grow 비율대로 나눠서 배정한다.
+	- flex-shrink ==> 감소 비율을 설정한다. (기본값 : 1)
+				      (0을 지정하면 축소가 해제되어 원래의 너비를 유지한다.)
+	- flex-basis ==> 각 요소의 기본 너비를 설정한다. (기본값 : auto)
+	
+	- flex ==> flex-grow, flex-shrink, flex-basis의 단축 속성
+			   (기본값 : 0 1 auto)
+			    
+	- align-self ==> 교차축을 기준으로 정렬 (align-items 보다 우선 적용)
