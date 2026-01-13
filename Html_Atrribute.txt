@@ -711,7 +711,7 @@
 
 32. css_float_layout
 260109/css_float_layout.html
-	
+	- 홈페이지 레이아웃 참고
 
 33. css_zIndex
 260109/css_zIndex.html
